@@ -1,4 +1,4 @@
-# include "<Numclass.h>" 
+#include "NumClass.h" 
 
 
 int isArmstrong(int num)
@@ -8,7 +8,7 @@ int isArmstrong(int num)
     {
         LastDig = temp%10;
         temp = temp /10;
-        sum = sum +(HelpArmstrong(LastDig, count);)
+        sum = sum +(HelpArmstrong(LastDig, count));
     }
 
     if(sum == num)

@@ -1,4 +1,5 @@
-# include "<Numclass.h>"
+#include "NumClass.h" 
+
 
 int isPrime(int num)
 {
