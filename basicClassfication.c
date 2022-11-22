@@ -22,6 +22,8 @@ int isPrime(int num)
 int isStrong(int num)
 {
     int sum =0, lastDigit = 0, temp = num;
+    if(num == 0)
+        return 0;
     while(temp != 0)
     {
         lastDigit = temp % 10;
