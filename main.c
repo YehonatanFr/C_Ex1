@@ -3,7 +3,8 @@
 
 int main() {
     int num1, num2;
-    scanf("Enter two numbers: %d %d", &num1, &num2);
+    scanf("%d", &num1);
+    scanf("%d", &num2);
     printf("The Armstrong numbers are:");
     for (int i = num1; i <= num2; ++i) {
         if (isArmstrong(i)) {

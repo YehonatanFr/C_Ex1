@@ -1,4 +1,4 @@
-# include<stdio.h>
+#include <stdio.h>
 
 int isArmstrong(int) ;
 int isPalindrome(int);
@@ -9,3 +9,4 @@ int CounterDig(int);
 int factorial(int);
 int reverse(int);
 int checkIsArmstrong(int, int);
+int checkIsPalindrome(int, int);

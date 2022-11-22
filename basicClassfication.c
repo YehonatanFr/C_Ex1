@@ -35,9 +35,11 @@ int isStrong(int num)
 
 int factorial(int num)
 {
-    if(num == 1)
+    int result =1;
+    for(int i = num; i>1; i--)
     {
-        return 1;
+        result = result*i;
     }
-    return num*factorial(num-1);
+    return result;
 }
+
