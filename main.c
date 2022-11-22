@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "NumClass.h"
-
+// this is nain
 int main() {
     int num1, num2;
     scanf("%d", &num1);
