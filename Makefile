@@ -7,13 +7,13 @@ Objects_rec = advancedClassficationRecursion.o basicClassfication.o
 all: loops recursives recursived loopd mains maindloop maindrec
 
 basicClassfication.o: basicClassfication.c NumClass.h
-	$(CC) $(Flags) -c basicClassfication.c 
+	$(CC) $(Flags) -fPIC -c basicClassfication.c 
 
 advancedClassficationLoop.o: advancedClassficationLoop.c NumClass.h
-	$(CC) $(Flags) -c advancedClassficationLoop.c 
+	$(CC) $(Flags) -fPIC -c advancedClassficationLoop.c 
 
 advancedClassficationRecursion.o: advancedClassficationRecursion.c NumClass.h
-	$(CC) $(Flags) -c advancedClassficationRecursion.c 
+	$(CC) $(Flags) -fPIC -c advancedClassficationRecursion.c 
 	
 loops: libclassloops.a
 
@@ -45,7 +45,7 @@ maindrec: main.o libclassrec.so
 	$(CC) $(Flags) main.o ./libclassrec.so -lm -o maindrec
 
 main.o: main.c NumClass.h
-	$(CC) $(Flags) -c main.c NumClass.h
+	$(CC) $(Flags) -fPIC -c main.c NumClass.h
 
 .PHONY: clean all
 
