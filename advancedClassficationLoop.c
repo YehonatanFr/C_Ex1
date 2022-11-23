@@ -1,7 +1,7 @@
-#include <stdio.h>
 #include "NumClass.h" 
 #include <math.h>
 
+//check if number is armstrong
 int isArmstrong(int num)
 {
     int sum = 0, count = CounterDig(num), temp = num, LastDig = 0;
@@ -20,6 +20,7 @@ int isArmstrong(int num)
     return 0;
 }
 
+//Check if number is palindrome
 int isPalindrome(int num)
 {
     int newNum = reverse(num); 
@@ -35,6 +36,7 @@ int isPalindrome(int num)
     return 1;
 }
 
+//Count the digits of the number
 int CounterDig(int num)
 {
     int count = 0;
@@ -46,6 +48,7 @@ int CounterDig(int num)
     return count;
 }
 
+//Reverse the number
 int reverse(int num)
 {
     int newNum = 0, temp = num, LastDig = 0, Digit = CounterDig(num);
@@ -59,6 +62,7 @@ int reverse(int num)
     return newNum;  
 }
 
+//Help function for the armstrong function
 int HelpArmstrong(int num, int Dig)
 {
     if(Dig == 0)
@@ -66,28 +70,4 @@ int HelpArmstrong(int num, int Dig)
         return 1;
     }
     return num*HelpArmstrong(num,--Dig);
-}
-
-
-
-int main()
-{
-    int num = 156;
-    // int num1 = isPrime(num);
-    // printf("\nIf the number is prime: %d \n", num1);
-    // int num3 = pow1(2,5);
-    // printf("\n%d\n", num3);
-    // int num2 = isPalindrome(num);
-    // if(num2)
-    //     printf("\nThe number is Palindrome: %d \n", num);
-    // else
-    //     printf("\nThe number is not Palindrome: %d \n", num);
-
-    // int num3 = isArmstrong(num);
-    // if(num3)
-    //     printf("\nThe number is Armstrong: %d \n", num);
-    // else
-    //     printf("\nThe number is not Armstrong: %d \n", num);
-    int num4 = reverse(num);
-    printf("\nreverse of nuber: %d\n", num4);
 }

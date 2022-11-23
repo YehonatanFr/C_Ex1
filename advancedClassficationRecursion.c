@@ -1,7 +1,7 @@
-#include <stdio.h>
 #include <math.h>
 #include "NumClass.h" 
 
+//Pow function
 int power(int base, int exponent)
 {
     int result =1;
@@ -12,6 +12,7 @@ int power(int base, int exponent)
     return result;
 }
 
+//Reverse the number
 int reverse(int num)
 {
     int newNum = 0, temp = num, Digit = CounterDig(num)-1;
@@ -24,6 +25,7 @@ int reverse(int num)
     return newNum;  
 }
 
+//Count the digits of the number
 int CounterDig(int num)
 {
     int count = 0;
@@ -36,6 +38,7 @@ int CounterDig(int num)
     return count;
 }
 
+//The help recursion function
 int checkIsArmstrong(int num, int Digits)
 {
     if(num == 0)
@@ -53,6 +56,7 @@ int isPalindrome(int num)
     return 0;
 }
 
+//The help recursion function
 int checkIsPalindrome(int reverse, int num)
 {
     if(num == 0)
@@ -80,32 +84,3 @@ int isArmstrong(int num)
     return 0;
 }
 
-// int main()
-// {
-//     int num = 565;
-//     // int num1 = isPrime(num);
-//     // printf("\nIf the number is prime: %d \n", num1);
-//     int num3 = power(4,3);
-//     printf("%d\n", num3);
-//     int num2 = isPalindrome(num);
-//     if(num2)
-//         printf("\nThe number is Palindrome: %d \n", num);
-//     else
-//         printf("\nThe number is not Palindrome: %d \n", num);
-
-//     int num4 = isArmstrong(num);
-
-//     if(num4)
-//         printf("\nThe number is Armstrong: %d \n", num);
-//     else
-//         printf("\nThe number is not Armstrong: %d \n", num);
-
-//     int num7 = reverse(num);
-//     printf("\nreverse of nuber: %d\n", num7);
-
-//     int num5 = CounterDig(num);
-//     printf("\n counters digit: %d\n", num5);
-
-//     int num6 = checkIsArmstrong(num, 3);
-//     printf("check is armstrong: %d\n",num6);
-// }

@@ -1,6 +1,6 @@
 #include "NumClass.h" 
 
-
+//Check if number is prime
 int isPrime(int num)
 {
     if(num ==1)
@@ -19,6 +19,7 @@ int isPrime(int num)
     return 1;
 }
 
+//Check if number is strong number
 int isStrong(int num)
 {
     int sum =0, lastDigit = 0, temp = num;
@@ -37,6 +38,7 @@ int isStrong(int num)
     return 0;
 }
 
+//return the factorial of number
 int factorial(int num)
 {
     int result =1;
