@@ -52,3 +52,4 @@ main.o: main.c NumClass.h
 clean:
 	rm -f *.o *.a *.so *.gch mains maindloop maindrec
 
+#ljhns
